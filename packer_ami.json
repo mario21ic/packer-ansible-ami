@@ -14,11 +14,11 @@
       "type": "amazon-ebs",
       "access_key": "{{user `aws_access_key`}}",
       "secret_key": "{{user `aws_secret_key`}}",
-      "region": "ca-central-1",
-      "source_ami": "ami-ebed508f",
+      "region": "eu-west-1",
+      "source_ami": "ami-70edb016",
       "instance_type": "t2.micro",
       "ssh_username": "ec2-user",
-      "ami_name": "my_backend"
+      "ami_name": "my_nginx"
     }
   ]
 }

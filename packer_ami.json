@@ -19,6 +19,21 @@
       "instance_type": "t2.micro",
       "ssh_username": "ec2-user",
       "ami_name": "my_nginx"
+    },
+    {
+      "type": "docker",
+      "image": "amazonlinux",
+      "commit": true
     }
+  ],
+  "post-processors": [
+    [
+      {
+        "type": "docker-tag",
+        "repository": "mario21ic/ami_nginx",
+        "tag": "0.1"
+      },
+      "docker-push"
+    ]
   ]
 }

@@ -1,8 +1,8 @@
 ---
 - name: Install PHP, FPM, Nginx and modules
   hosts: all
-  remote_user: ec2-user
-  become: yes
+  become: true
+  #become_user: ec2-user
   become_method: sudo
   roles:
     - common

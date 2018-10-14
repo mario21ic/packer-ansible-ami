@@ -34,7 +34,10 @@
         "repository": "mario21ic/nginx",
         "tag": "draft"
       },
-      "docker-push"
+      {
+        "type": "docker-push",
+        "only": ["docker"]
+      }
     ]
   ]
 }

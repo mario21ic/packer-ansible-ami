@@ -4,4 +4,4 @@
 
 - name: start and enable nginx
   service: name=nginx state=started enabled=yes
-  when: builder == "amazon-ebs"
+  when: packer_builder_type == "amazon-ebs"
